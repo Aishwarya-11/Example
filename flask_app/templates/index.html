@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <title> Flask Application</title>
+  <head>
+    <link href="../static/main.css" rel="stylesheet">
+  </head>
+    <body>
+      <div class="container">
+        <h1>My App</h1>
+        
+        <form action="{{url_for('success')}}" method = "POST">
+          <input placeholder="Enter a file name" type="text" name="file_name" required> <br>
+          
+          <button type="submit"> Submit </button>
+        </form>
+      </div>
+    </body>
+</html>
